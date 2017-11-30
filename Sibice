@@ -1,0 +1,38 @@
+"SIBICE"
+import java.util.Scanner;
+import java.lang.Math;
+public class Sibice
+{
+	public static void main(String [] args)
+	{
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+		int w = scan.nextInt();
+		int h = scan.nextInt();
+
+		int arr [] = new int[n];
+		double leng = Math.sqrt(w*w+h*h)+0.01;
+
+		for(int i =0; i<n; i++)
+		{
+			arr[i]=scan.nextInt();
+		}
+
+		for(int i =0; i<n; i++)
+		{
+			if(arr[i]< leng)
+			{
+				System.out.println("DA");
+			}
+			else
+			{
+				System.out.println("NE");
+			}
+		}
+
+
+
+
+	}
+}
